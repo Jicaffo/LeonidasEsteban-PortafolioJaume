@@ -1,0 +1,35 @@
+@import "./button.css";
+@import "./button-icon.css";
+@import "./header.css";
+@import "./hero.css";
+
+:root {
+    /*Estilos creados a partir del Design Sistem de figma*/
+    /*Texto*/
+    --fontBase: 'Poppins', sans-serif;
+    --headline1: bold 95px/153.71px var(--fontBase); /*bold = 700px*/
+    --headline2: bold 59px/95px var(--fontBase);
+    --headline3: bold 48px/77px var(--fontBase);
+    --headline4: bold 34px/55px var(--fontBase);
+    --headline5: bold 24px/38px var(--fontBase);
+    --body1: normal 16px/25px var(--fontBase); /*normal = 400px (podría omitirse)*/
+    --body2: normal 14px/22px var(--fontBase);
+    --button: bold 14px/22px var(--fontBase);
+    --caption: normal 12px/19px var(--fontBase);
+
+    /*Colores y gradientes*/
+    --primaryColor: #310A90;
+    --secondaryColor: #42E2B8;
+    --secondaryTextColor: white;
+    --gradient1: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+    --gradient2: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+    
+}
+
+body{
+    background: var(--gradient1);
+    min-block-size: 100vh; /*para que no repita*/
+    font: var(--body1);
+    color: var(--primaryColor);
+}
+
