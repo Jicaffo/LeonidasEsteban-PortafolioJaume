@@ -11,34 +11,51 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header class="header">
-        <img src="./img/LOGO.png" alt="Logo de la marca" width="70" height="20">
-        <button class="button">Currículum</button>
-        <!-- <button class="button is-secondary">Currículum</button> -->
-    </header>
-
-    <section class="hero">
-        <div class="hero-img">
-            <img src="./img/Jaume.png" alt="Foto de Jaume" width="328px" height="330px">
-        </div>
-        <div class="hero-description">
-            <h1>
-                <span>¡Hola a todos!</span>
-                <span>Soy Jaume</span>
-            </h1>
-            <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
-            <div class="hero-social">
-                <!-- href="tel:" hace que intente llamar desde alguna aplicación en la computadora-->
-                <a class="button-icon" href="tel:1558745314"><img src="./icons/icon-phone.svg" alt="Ícono de un teléfono"></a>
-                <a class="button-icon" href="tel:1558745314"><img src="./icons/icon-important_mail.svg" alt="Ícono de un teléfono"></a>
-                <a class="button-icon" href="tel:1558745314"><img src="./icons/icon-instagram.svg" alt="Ícono de un teléfono"></a>
-                <a class="button-icon" href="tel:1558745314"><img src="./icons/icon-twitter_squared.svg" alt="Ícono de un teléfono"></a>
+    <!-- TODO: Final. Alguna razón por la que .wrapper no pueda ir en body? -->
+    <div class="wrapper">
+        <header class="header">
+            <!-- TODO: Final: Reemplazar imagen completa por componentes sueltos armados en CSS -->
+            <img src="./img/LOGO.png" alt="Logo de la marca" width="70" height="20">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a class="is-active" href="#main">Hola</a>
+                    </li>
+                    <li>
+                        <a href="#project">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Hablemos</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="button">Currículum</button>
+            <!-- <button class="button is-secondary">Currículum</button> -->
+        </header>
+    
+        <section class="hero" id="main">
+            <div class="hero-image">
+                <img src="./img/Jaume.png" alt="Foto de Jaume" width="328px" height="330px">
             </div>
-            <a href="#" class="button">Descargar Currículum</a>
-        </div>
-        
-        
-    </section>
+            <div class="hero-description">
+                <h1>
+                    <span>¡Hola a todos!</span>
+                    <span>Soy Jaume</span>
+                </h1>
+                <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
+                <div class="hero-social">
+                    <!-- href="tel:" hace que intente llamar desde alguna aplicación en la computadora-->
+                    <a class="button-icon" href="tel:1558745314"><img src="./icons/icon-phone.svg" alt="Ícono de un teléfono"></a>
+                    <a class="button-icon" href="tel:1558745314"><img src="./icons/icon-important_mail.svg" alt="Ícono de un teléfono"></a>
+                    <a class="button-icon" href="tel:1558745314"><img src="./icons/icon-instagram.svg" alt="Ícono de un teléfono"></a>
+                    <a class="button-icon" href="tel:1558745314"><img src="./icons/icon-twitter_squared.svg" alt="Ícono de un teléfono"></a>
+                </div>
+                <a href="#" class="button">Descargar Currículum</a>
+            </div>
+            
+            
+        </section>
+    </div>
     
     
 </body>

@@ -3,7 +3,7 @@
     padding-block-start: 16px;
 }
 
-.hero-img{
+.hero-image{
     text-align: center; /*Así se pueede centrar en contexto de bloque tanto imágenes como texto*/
 
 }
@@ -28,3 +28,37 @@
 .hero-social{
     padding-block-end: 24px;
 }
+
+ /*768px se suele utilizar como standard. Basado en los Ipad standard (más chicos) en vertical*/
+@media screen and (min-width: 768px){
+    .hero {
+        border: 1px dashed red;
+        display: flex;
+        gap: 32px; /*Para el gap, lo obtenido de Figma serían 115px (67 en la version descargada), pero sería muy grande para medidas chicas, por lo que opta por un múltiplo de 16px. Entiendo que acá sería mejor usar rem o em?*/
+    }
+
+    .hero-description{
+        order: 1;
+        max-inline-size: 450px; /*449px en figma*/
+
+    }
+
+    .hero-image{
+        order: 2; /*Permite especificar el orden de un elemento flex dentro de su contenendor*/
+        text-align: end; /*Es buena práctica utilizar valores logicos (end en vez de right)*/
+        border: 1px dashed red;
+        flex: 1; /*para que tome todo el espacio disponible y la imagen quede alineada, si no por defecto se ajusta a la imagen*/
+    }
+   
+}
+
+/*En la primer parte de la transición de mobile a 768 no queda bien el texto teniendo la imagen grande y no tenemos el diseño esas medidas en figma, por lo que como frontend se toma la decisión de pasar al siguiente Media Query el "agrandado de la imagen).
+El siguiente breakpoint standard es 1024*/
+@media screen and (min-width: 1024px){
+    .hero-image img{
+        inline-size: 500px;
+        block-size: 504px;
+   }
+}
+
+/*Los siguientes breakpoints standard serían 1280px y 1366px*/

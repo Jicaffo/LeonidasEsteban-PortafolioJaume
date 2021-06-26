@@ -1,0 +1,8 @@
+/*Esta clase permite mantener todo el contenido dentro de las fronteras del proyecto, que son el espacio máximo que ocupan los items en el diseño original en Figma. Si la resolución permite un ancho mayor, se agregarán margins automáticos a los costados para que quede centrado sin superar la frontera.*/
+
+.wrapper {
+    max-inline-size: 1158px; /*Obtenido de figma, midiendo el ancho máximo de todos los elementos*/
+    padding-inline: 16px; /*Por algún motivo no toma en color la propiedad*/
+    margin: auto; /*centra elementos de tipo bloque con tamaño definido*/
+    
+}
