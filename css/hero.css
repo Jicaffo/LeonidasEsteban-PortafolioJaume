@@ -5,7 +5,6 @@
 
 .hero-image{
     text-align: center; /*Así se pueede centrar en contexto de bloque tanto imágenes como texto*/
-
 }
 
 .hero-description{
@@ -48,6 +47,11 @@
         text-align: end; /*Es buena práctica utilizar valores logicos (end en vez de right)*/
         border: 1px dashed red;
         flex: 1; /*para que tome todo el espacio disponible y la imagen quede alineada, si no por defecto se ajusta a la imagen*/
+    }
+
+    /*div.hero-description .button{*/
+    .ocultar-en-grande{
+        display:none; /*TODO: No funciona con div.hero-description .button, ver por qué*/
     }
    
 }
