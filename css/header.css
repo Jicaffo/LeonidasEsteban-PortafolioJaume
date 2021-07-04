@@ -2,6 +2,7 @@
     position: sticky; /*para que el header se mantenga al scrollear*/
     top: 0px;
     backdrop-filter: blur(10px); /*Hace borrosos otros elementos cuando se pasa por arriba. En Firefox no está funcionando.*/
+    background-image: linear-gradient(#FFFFFFCC, transparent);
 }
 
 .header-content{
