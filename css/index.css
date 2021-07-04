@@ -4,12 +4,22 @@
 @import "./hero.css";
 @import "./wrapper.css";
 @import "./menu.css";
-@import "./presentacion-trabajos.css";
+@import "./presentacion-proyectos.css";
+@import "./testimonio.css";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 :root {
     /*Estilos creados a partir del Design Sistem de figma*/
+    
     /*Texto*/
+    /*font-family*/
     --fontBase: 'Poppins', sans-serif;
+    --fontSecondary: 'Oxygen', sans-serif;
+    /*font*/
     --headline1: bold 95px/153.71px var(--fontBase); /*bold = 700px*/
     --headline2: bold 59px/95px var(--fontBase);
     --headline3: bold 48px/77px var(--fontBase);
@@ -19,6 +29,8 @@
     --body2: normal 14px/22px var(--fontBase);
     --button: bold 14px/22px var(--fontBase);
     --caption: normal 12px/19px var(--fontBase);
+    --testimonySmall: bold 16px/26px var(--fontSecondary);
+    --testimonyBig: bold 34px/55px var(--fontSecondary);
 
     /*Colores y gradientes*/
     --primaryColor: #310A90;
@@ -26,6 +38,8 @@
     --secondaryTextColor: white;
     --gradient1: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
     --gradient2: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+    --cardColor: RGBA(256,256,256,0.2);
+    --cardBorderColor: white;
     
 }
 

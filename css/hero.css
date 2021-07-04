@@ -1,16 +1,23 @@
 .hero{
-    border: 1px solid red;
     padding-block-start: 16px;
 }
 
 .hero-image{
     text-align: center; /*Así se pueede centrar en contexto de bloque tanto imágenes como texto*/
+    border: 1px solid blue;
+    /*TODO: Revisar por que queda una pequeña separación debajo y hacia los costados de la imagen.*/
+}
+
+.hero-image{ /*en principio creo que esto sería innecesario habiendo definido las medidas base en el html*/
+    max-inline-size: 100%;
+    height: auto;
 }
 
 .hero-description{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-top: 16px;
 }
 
 .hero h1{
@@ -26,26 +33,31 @@
 
 .hero-social{
     padding-block-end: 24px;
+    display: flex;
+    gap: 16px;
 }
 
  /*768px se suele utilizar como standard. Basado en los Ipad standard (más chicos) en vertical*/
 @media screen and (min-width: 768px){
     .hero {
-        border: 1px dashed red;
+        padding-block-start: 24px;
         display: flex;
         gap: 32px; /*Para el gap, lo obtenido de Figma serían 115px (67 en la version descargada), pero sería muy grande para medidas chicas, por lo que opta por un múltiplo de 16px. Entiendo que acá sería mejor usar rem o em?*/
     }
 
     .hero-description{
-        order: 1;
+        order: 1; /*Permite especificar el orden de un elemento flex dentro de su contenendor*/
         max-inline-size: 450px; /*449px en figma*/
+        padding-top: 0px;
+    }
 
+    .hero-image img{
+        padding-bottom: 30px;
     }
 
     .hero-image{
         order: 2; /*Permite especificar el orden de un elemento flex dentro de su contenendor*/
         text-align: end; /*Es buena práctica utilizar valores logicos (end en vez de right)*/
-        border: 1px dashed red;
         flex: 1; /*para que tome todo el espacio disponible y la imagen quede alineada, si no por defecto se ajusta a la imagen*/
     }
 
@@ -63,6 +75,10 @@ El siguiente breakpoint standard es 1024*/
         inline-size: 500px;
         block-size: 504px;
    }
+
+   .hero-image img{
+    padding-bottom: 50px;
+    }
 }
 
 /*Los siguientes breakpoints standard serían 1280px y 1366px*/

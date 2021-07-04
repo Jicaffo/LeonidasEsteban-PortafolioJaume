@@ -1,0 +1,114 @@
+.testimonio{
+    padding-block: 40px;
+}
+
+.ejemplo-image > img{
+    max-inline-size: 100%; /*Usado en el curso*/
+    /*width: 100%; /*Lo que hubiera usado yo. Funciona igual en mobile, pero crece mucho más en desktop*/
+    margin: auto;
+}
+
+.ejemplo-description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-block: 40px;
+}
+
+.ejemplo-title{
+    background-color: var(--primaryColor);
+    color: var(--secondaryTextColor);
+    font: var(--headline5);
+    text-decoration: none;
+    padding-block: 4px;
+    Padding-inline: 8px;
+    align-self: flex-start; /*Para que no quede como stretch*/
+    box-shadow: -4px 4px 0 var(--secondaryTextColor);
+    /*margin-left: 4px; /*Si quisieramos evitar que la sombra exceda el tamaño del contenedor*/
+}
+
+.card{
+    padding: 24px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 24px;
+    max-width: 1132; /*TODO: no funciona por ser flex, ver como solucionar*/
+    max-inline-size: 1132px;
+
+    background-color: var(--cardColor);
+    border-radius: 24px;
+    border-style: solid;
+    border-width: 4px;
+    /*border-color: linear-gradient(red, yellow, blue); /*No funciona*/
+    /*border-image: linear-gradient(to right bottom, var(--cardBorderColor), transparent) 1; /* Funciona pero no respeta bordes redondeados*/
+    border-image: radial-gradient(circle, var(--cardBorderColor), transparent) 1; /*Faltaría pasarlo a ellipse y centrarlo "at top left" (al momento de sacarlo del centro no respeta bordes redondeados*/
+
+}
+
+.testimonio .quote{
+    font: var(--testimonySmall);
+    max-inline-size: 972px;
+}
+
+.testimonio .who{
+    font: var(--caption);
+    opacity: 0.5;
+}
+
+
+@media screen and (min-width: 768px){
+    .testimonio{
+        padding-block: 80px;
+        /*TODO: Falta padding a los costados*/
+    }
+
+    .ejemplo{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .ejemplo:nth-of-type(odd) .ejemplo-image{
+        /*TODO: Por algún error de concepto odd me los toma todos y even ninguno, cuando necesito que solo me modifique los impares */
+        order: 2;
+        border: 3px solid red;
+    }
+
+    .ejemplo-image{
+        flex: 1;
+        /*Por alguna razón acá adentro queda un margencito debajo de la imagen, se soluciona aplicando display flex acá y align-self center en la img, pero no entiendo por qué.*/
+        /*display: flex;*/
+        text-align: center;
+    }
+    .ejemplo-image img{
+        /*Por alguna razón acá adentro queda un margencito debajo de la imagen, se soluciona aplicando display flex acá y align-self center en la img, pero no entiendo por qué.*/
+        /*align-self: center;*/
+        
+    }
+
+    .ejemplo-description{
+        padding-block: 0px;
+        flex: 1;
+    }
+
+    .card{
+        margin-top: 80px;
+        padding: 80px;
+    }
+
+    .testimonio .user{
+        height: 80px;
+        width: 80px;
+    }
+
+    .testimonio .quote{
+        font: var(--testimonyBig);
+    }
+    
+    .testimonio .who{
+        font: var(--headline5);
+    }
+}

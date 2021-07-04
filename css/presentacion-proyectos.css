@@ -1,0 +1,38 @@
+.presentacion-proyectos{
+    text-align: center;
+    padding-block: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    
+}
+
+.max-900{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.max-900 > .texto {
+    font: var(--headline5);
+    font-weight: normal;
+    margin: 0px;
+}
+
+.max-900 > .headline5 {
+    font: var(--headline5);
+}
+
+@media screen and (min-width: 768px){
+    .presentacion-proyectos{
+        padding-block: 200px;
+    }
+    
+    .max-900{
+        font: var(--testimonyBig);
+        font-weight: 300px;
+        max-width: 950px;
+    }
+}

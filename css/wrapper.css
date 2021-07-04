@@ -2,6 +2,7 @@
 
 .wrapper {
     max-inline-size: 1158px; /*Obtenido de figma, midiendo el ancho máximo de todos los elementos*/
+    min-inline-size: 328px;
     padding-inline: 16px; /*Por algún motivo no toma en color la propiedad*/
     margin: auto; /*centra elementos de tipo bloque con tamaño definido*/
     
