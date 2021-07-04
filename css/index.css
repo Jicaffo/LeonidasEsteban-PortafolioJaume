@@ -6,6 +6,10 @@
 @import "./menu.css";
 @import "./presentacion-proyectos.css";
 @import "./testimonio.css";
+@import "./social.css";
+@import "./footer.css";
+@import "./formulario.css";
+@import "./title.css";
 
 *{
     margin: 0px;
@@ -14,7 +18,7 @@
 
 :root {
     /*Estilos creados a partir del Design Sistem de figma*/
-    
+
     /*Texto*/
     /*font-family*/
     --fontBase: 'Poppins', sans-serif;
@@ -36,6 +40,7 @@
     --primaryColor: #310A90;
     --secondaryColor: #42E2B8;
     --secondaryTextColor: white;
+    --formBorderColor: #858C94;
     --gradient1: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
     --gradient2: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
     --cardColor: RGBA(256,256,256,0.2);

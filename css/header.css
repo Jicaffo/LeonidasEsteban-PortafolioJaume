@@ -1,15 +1,18 @@
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    block-size: 80px; /*Fija la altura según diseño en figma*/
     position: sticky; /*para que el header se mantenga al scrollear*/
     top: 0px;
     backdrop-filter: blur(10px); /*Hace borrosos otros elementos cuando se pasa por arriba. En Firefox no está funcionando.*/
 }
 
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    block-size: 80px; /*Fija la altura según diseño en figma*/
+}
+
 @media screen and (min-width: 768px){
-    .header {
+    .header-content{
         block-size: 98px;
     }
 }
