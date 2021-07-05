@@ -2,6 +2,10 @@
     padding-block: 40px;
 }
 
+.ejemplo-image {
+    text-align: center;
+}
+
 .ejemplo-image > img{
     max-inline-size: 100%; /*Usado en el curso*/
     /*width: 100%; /*Lo que hubiera usado yo. Funciona igual en mobile, pero crece mucho más en desktop*/
@@ -69,7 +73,6 @@
         flex: 1;
         /*Por alguna razón acá adentro queda un margencito debajo de la imagen, se soluciona aplicando display flex acá y align-self center en la img, pero no entiendo por qué.*/
         /*display: flex;*/
-        text-align: center;
     }
     .ejemplo-image img{
         /*Por alguna razón acá adentro queda un margencito debajo de la imagen, se soluciona aplicando display flex acá y align-self center en la img, pero no entiendo por qué.*/
